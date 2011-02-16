@@ -1,5 +1,4 @@
 
-
               /*=          :=?ZNNN=   ?NZ      ?$I?=~:        
               INNNNNNNNNNNNNNNNNN    ZNN=     ZNNNNNNNNNZ=   
               =NNZZZZZZZZZZZZZNZ    ?NNNN:    ZNZZNNNZZZNNN? 
@@ -83,7 +82,7 @@ function Transmogrifier (map) {
             this._[prop] = val;
             
             // Render right-hand assignment by function
-            src += 'this._["' + prop + '"](i);';
+            src += 'this._["' + prop + '"](i,o);';
 
           // Render dot-delimited property as gated assignment
           } else {
